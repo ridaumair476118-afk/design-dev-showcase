@@ -6,6 +6,9 @@ import work1 from "@/assets/work-1.jpg";
 import work2 from "@/assets/work-2.jpg";
 import work3 from "@/assets/work-3.jpg";
 import work4 from "@/assets/work-4.jpg";
+import workFb from "@/assets/work-fb.jpg";
+import workFlyer from "@/assets/work-flyer.jpg";
+import workPhoto from "@/assets/work-photo.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -20,6 +23,9 @@ export const Route = createFileRoute("/")({
 });
 
 const works = [
+  { img: workFb, title: "Facebook Cover", category: "Social Media Design", year: "2025" },
+  { img: workFlyer, title: "Flyer", category: "Print Design", year: "2025" },
+  { img: workPhoto, title: "Photo Manipulation", category: "Photoshop", year: "2025" },
   { img: work1, title: "Editorial Identity", category: "Brand Design", year: "2025" },
   { img: work2, title: "Aurora Interface", category: "Web Development", year: "2025" },
   { img: work3, title: "Onyx Stationery", category: "Print & Brand", year: "2024" },
