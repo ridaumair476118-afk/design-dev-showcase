@@ -1,5 +1,4 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useEffect, useState } from "react";
 import logo from "@/assets/rida-logo.jpg";
 import heroBg from "@/assets/hero-bg.jpg";
 import work1 from "@/assets/work-1.jpg";
@@ -40,32 +39,8 @@ const services = [
 ];
 
 function Index() {
-  const [scrolled, setScrolled] = useState(false);
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 40);
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
-      {/* NAV */}
-      <header className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 ${scrolled ? "backdrop-blur-xl bg-background/70 border-b border-border" : ""}`}>
-        <nav className="max-w-[1400px] mx-auto px-6 md:px-12 py-5 flex items-center justify-between">
-          <a href="#top" className="flex items-center gap-3 group">
-            <img src={logo} alt="Rida logo" className="h-10 w-10 rounded-full object-cover ring-1 ring-gold/40 transition-transform group-hover:rotate-12" />
-            <span className="font-display text-xl tracking-wide">Rida<span className="text-gold">.</span></span>
-          </a>
-          <ul className="hidden md:flex items-center gap-10 text-sm tracking-widest uppercase">
-            {["Work", "Services", "About", "Contact"].map((l) => (
-              <li key={l}><a href={`#${l.toLowerCase()}`} className="text-muted-foreground hover:text-gold transition-colors">{l}</a></li>
-            ))}
-          </ul>
-          <a href="#contact" className="hidden md:inline-flex items-center gap-2 text-sm tracking-widest uppercase border border-gold/40 px-5 py-2.5 rounded-full text-gold hover:bg-gold hover:text-primary-foreground transition-all">
-            Let's Talk
-          </a>
-        </nav>
-      </header>
 
       {/* HERO */}
       <section id="top" className="relative min-h-screen flex items-center pt-32 pb-20">
