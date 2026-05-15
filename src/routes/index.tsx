@@ -50,12 +50,12 @@ function Index() {
         <div className="relative max-w-[1400px] mx-auto px-6 md:px-12 grid md:grid-cols-12 gap-8 items-center">
           <div className="md:col-span-8 animate-fade-up">
             <p className="text-xs tracking-[0.4em] uppercase text-gold mb-6">— Portfolio · 2025</p>
-            <h1 className="text-[14vw] md:text-[9vw] leading-[0.85] font-display font-light">
-              Where <em className="text-gold-gradient not-italic font-normal">creativity</em><br />
-              meets <em className="font-normal italic">innovation</em>.
+            <h1 className="text-[12vw] md:text-[8vw] leading-[0.9] font-display font-light tracking-tight">
+              <span className="text-gold-gradient">RIDA</span><br />
+              <em className="not-italic font-normal">DESIGN STUDIO</em>
             </h1>
-            <p className="mt-10 max-w-xl text-lg text-muted-foreground leading-relaxed">
-              I'm Rida — a graphic designer and front-end developer crafting brand identities and digital experiences with editorial precision and code that breathes.
+            <p className="mt-10 max-w-xl text-lg md:text-xl text-muted-foreground leading-relaxed">
+              Graphic Designer & Front-end Developer specialized in <span className="text-gold">branding</span> and <span className="text-gold">digital experiences</span>.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
               <a href="#work" className="group inline-flex items-center gap-3 bg-gold-gradient text-primary-foreground px-8 py-4 rounded-full font-medium tracking-wide shadow-[var(--shadow-gold)] hover:scale-[1.02] transition-transform">
