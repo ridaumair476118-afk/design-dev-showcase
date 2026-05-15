@@ -50,29 +50,9 @@ function Index() {
         <div className="relative max-w-[1400px] mx-auto px-6 md:px-12 grid md:grid-cols-12 gap-8 items-center">
           <div className="md:col-span-8 animate-fade-up">
             <p className="text-xs tracking-[0.4em] uppercase text-gold mb-6">— Portfolio · 2025</p>
-            <h1 className="text-[12vw] md:text-[8vw] leading-[0.9] font-display font-black tracking-tight uppercase group cursor-default">
-              <span className="block overflow-hidden">
-                {"RIDA".split("").map((c, i) => (
-                  <span
-                    key={`r-${i}`}
-                    className="inline-block text-gold-gradient opacity-0 animate-fade-in transition-transform duration-500 group-hover:-translate-y-2"
-                    style={{ animationDelay: `${i * 80}ms`, animationFillMode: "forwards", transitionDelay: `${i * 40}ms` }}
-                  >
-                    {c}
-                  </span>
-                ))}
-              </span>
-              <span className="block overflow-hidden">
-                {"DESIGN STUDIO".split("").map((c, i) => (
-                  <span
-                    key={`d-${i}`}
-                    className="inline-block opacity-0 animate-fade-in transition-transform duration-500 group-hover:translate-y-2"
-                    style={{ animationDelay: `${400 + i * 60}ms`, animationFillMode: "forwards", transitionDelay: `${i * 30}ms` }}
-                  >
-                    {c === " " ? "\u00A0" : c}
-                  </span>
-                ))}
-              </span>
+            <h1 className="text-[12vw] md:text-[8vw] leading-[0.9] font-display font-black tracking-tight uppercase">
+              <span className="text-gold-gradient font-black">RIDA</span><br />
+              <em className="not-italic font-black">DESIGN STUDIO</em>
             </h1>
             <p className="mt-10 max-w-xl text-lg md:text-xl text-muted-foreground leading-relaxed">
               Graphic Designer & Front-end Developer specialized in <span className="text-gold">branding</span> and <span className="text-gold">digital experiences</span>.
