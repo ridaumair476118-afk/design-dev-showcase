@@ -23,8 +23,8 @@ const works = [
   { img: workFb, title: "Facebook Cover", category: "Social Media Design", year: "2025" },
   { img: workFlyer, title: "Flyer", category: "Print Design", year: "2025" },
   { img: workPhoto, title: "Photo Manipulation", category: "Photoshop", year: "2025" },
-  { img: work1, title: "Editorial Identity", category: "Brand Design", year: "2025" },
-  { img: work2, title: "Aurora Interface", category: "Web Development", year: "2025" },
+  { img: work1, title: "Choco Brew", category: "Brand Identity · Coming Soon", year: "2025" },
+  { img: work2, title: "Pixel Perfect Production", category: "Web Development · Coming Soon", year: "2025" },
   { img: work3, title: "Onyx Stationery", category: "Print & Brand", year: "2024" },
   { img: work4, title: "Fragment Series", category: "Poster Design", year: "2024" },
 ];
